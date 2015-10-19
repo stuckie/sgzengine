@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="SGZEngine.codelite" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="code">
+    <VirtualDirectory Name="client">
+      <VirtualDirectory Name="gui">
+        <VirtualDirectory Name="frame">
+          <File Name="code/client/gui/frame/OFrame.h"/>
+          <File Name="code/client/gui/frame/IFrame.h"/>
+          <File Name="code/client/gui/frame/OFrame.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="button">
+          <File Name="code/client/gui/button/ButtonStates.h"/>
+          <File Name="code/client/gui/button/IButton.h"/>
+          <File Name="code/client/gui/button/OButton.h"/>
+        </VirtualDirectory>
+        <File Name="code/client/gui/MGui.cpp"/>
+        <File Name="code/client/gui/MGui.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="renderer">
+        <VirtualDirectory Name="window">
+          <File Name="code/client/renderer/window/IWindow.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="texture">
+          <File Name="code/client/renderer/texture/OTexture.h"/>
+          <File Name="code/client/renderer/texture/ITexture.h"/>
+        </VirtualDirectory>
+        <File Name="code/client/renderer/ORender.h"/>
+        <File Name="code/client/renderer/IRender.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="audio">
+        <File Name="code/client/audio/IAudio.h"/>
+        <File Name="code/client/audio/OAudio.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="input">
+        <File Name="code/client/input/OControl.h"/>
+        <File Name="code/client/input/IControl.h"/>
+      </VirtualDirectory>
+      <File Name="code/client/OClient.cpp"/>
+      <File Name="code/client/IClient.h"/>
+      <File Name="code/client/OClient.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="server">
+      <VirtualDirectory Name="managers">
+        <VirtualDirectory Name="entityManager">
+          <File Name="code/server/managers/entityManager/MEntity.cpp"/>
+          <File Name="code/server/managers/entityManager/MEntity.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="levelManager">
+          <File Name="code/server/managers/levelManager/MLevel.h"/>
+          <File Name="code/server/managers/levelManager/MLevel.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="textureManager">
+          <File Name="code/server/managers/textureManager/MTexture.cpp"/>
+          <File Name="code/server/managers/textureManager/MTexture.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="gameServer">
+        <File Name="code/server/gameServer/GameServer.h"/>
+        <File Name="code/server/gameServer/GameServer.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="networkServer">
+        <File Name="code/server/networkServer/NetworkServer.h"/>
+        <File Name="code/server/networkServer/NetworkServer.cpp"/>
+      </VirtualDirectory>
+      <File Name="code/server/OServer.h"/>
+      <File Name="code/server/IServer.h"/>
+      <File Name="code/server/OServer.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="common">
+      <VirtualDirectory Name="debug">
+        <File Name="code/common/debug/CDebug.h"/>
+        <File Name="code/common/debug/CDebug.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="data">
+        <File Name="code/common/data/CSingleton.h"/>
+        <File Name="code/common/data/CSLinkedlist.h"/>
+        <File Name="code/common/data/CTimer.h"/>
+        <File Name="code/common/data/CRandom.h"/>
+        <File Name="code/common/data/CRandom.cpp"/>
+        <File Name="code/common/data/CArray3D.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="engine">
+        <File Name="code/common/engine/CInterpret.cpp"/>
+        <File Name="code/common/engine/CInterpret.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="script">
+        <File Name="code/common/script/OScript.h"/>
+        <File Name="code/common/script/IScript.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="entities">
+        <File Name="code/common/entities/OEntity3D.h"/>
+        <File Name="code/common/entities/OEntity2D.h"/>
+        <File Name="code/common/entities/OEntity2D.cpp"/>
+        <File Name="code/common/entities/IEntity.h"/>
+        <File Name="code/common/entities/OEntity3D.cpp"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="system">
+      <VirtualDirectory Name="sdl">
+        <VirtualDirectory Name="audio">
+          <File Name="code/system/sdl/audio/SDLAudio.h"/>
+          <File Name="code/system/sdl/audio/SDLAudio.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="input">
+          <File Name="code/system/sdl/input/SDLControl.cpp"/>
+          <File Name="code/system/sdl/input/SDLControl.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="renderer">
+          <File Name="code/system/sdl/renderer/SDLTexture.h"/>
+          <File Name="code/system/sdl/renderer/SDLRenderer.h"/>
+          <File Name="code/system/sdl/renderer/SDLTexture.cpp"/>
+          <File Name="code/system/sdl/renderer/SDLRenderer.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="window">
+          <File Name="code/system/sdl/window/SDLWindow.cpp"/>
+          <File Name="code/system/sdl/window/SDLWindow.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="entities">
+          <File Name="code/system/sdl/entities/SDLEntity2D.cpp"/>
+          <File Name="code/system/sdl/entities/SDLEntity2D.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="lua">
+        <VirtualDirectory Name="Proxies">
+          <File Name="code/system/lua/Proxies/SGZTextureMan.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZHorde.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZControl.h"/>
+          <File Name="code/system/lua/Proxies/SGZAudio.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZTextureMan.h"/>
+          <File Name="code/system/lua/Proxies/SGZEntityMan.h"/>
+          <File Name="code/system/lua/Proxies/SGZLevelMan.h"/>
+          <File Name="code/system/lua/Proxies/SGZHorde.h"/>
+          <File Name="code/system/lua/Proxies/SGZNetwork.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZInterpret.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZAudio.h"/>
+          <File Name="code/system/lua/Proxies/SGZLevelMan.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZRender.h"/>
+          <File Name="code/system/lua/Proxies/SGZTimer.h"/>
+          <File Name="code/system/lua/Proxies/SGZTimer.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZEntityMan.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZControl.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZInterpret.h"/>
+          <File Name="code/system/lua/Proxies/SGZRender.cpp"/>
+          <File Name="code/system/lua/Proxies/SGZNetwork.h"/>
+        </VirtualDirectory>
+        <File Name="code/system/lua/LuaScript.h"/>
+        <File Name="code/system/lua/LuaScript.cpp"/>
+        <File Name="code/system/lua/lunar.h"/>
+        <File Name="code/system/lua/LuaProxies.cpp"/>
+        <File Name="code/system/lua/LuaProxies.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="horde">
+        <VirtualDirectory Name="renderer">
+          <File Name="code/system/horde/renderer/HordeRender.cpp"/>
+          <File Name="code/system/horde/renderer/HordeTexture.h"/>
+          <File Name="code/system/horde/renderer/HordeRender.h"/>
+          <File Name="code/system/horde/renderer/HordeTexture.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="entities">
+          <File Name="code/system/horde/entities/HordeEntity2D.h"/>
+          <File Name="code/system/horde/entities/HordeEntity2D.cpp"/>
+          <File Name="code/system/horde/entities/HordeEntity3D.h"/>
+          <File Name="code/system/horde/entities/HordeEntity3D.cpp"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="sdlgl">
+        <VirtualDirectory Name="renderer">
+          <File Name="code/system/sdlgl/renderer/SDLGLTexture.h"/>
+          <File Name="code/system/sdlgl/renderer/SDLGLRenderer.cpp"/>
+          <File Name="code/system/sdlgl/renderer/SDLGLRenderer.h"/>
+          <File Name="code/system/sdlgl/renderer/SDLGLTexture.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="window">
+          <File Name="code/system/sdlgl/window/SDLGLWindow.h"/>
+          <File Name="code/system/sdlgl/window/SDLGLWindow.cpp"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="opengl">
+        <VirtualDirectory Name="entities">
+          <File Name="code/system/opengl/entities/GLEntity2D.cpp"/>
+          <File Name="code/system/opengl/entities/GLEntity2D.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <File Name="code/arch.h"/>
+    <File Name="code/main.h"/>
+    <File Name="code/main.cpp"/>
+    <File Name="code/typedefs.h"/>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="lua">
+    <File Name="lua/ldo.c"/>
+    <File Name="lua/lapi.h"/>
+    <File Name="lua/loadlib.c"/>
+    <File Name="lua/ldo.h"/>
+    <File Name="lua/lualib.h"/>
+    <File Name="lua/ltm.c"/>
+    <File Name="lua/luaconf.h"/>
+    <File Name="lua/liolib.c"/>
+    <File Name="lua/lstring.h"/>
+    <File Name="lua/lmem.h"/>
+    <File Name="lua/lvm.c"/>
+    <File Name="lua/lstring.c"/>
+    <File Name="lua/ltm.h"/>
+    <File Name="lua/lparser.h"/>
+    <File Name="lua/lauxlib.c"/>
+    <File Name="lua/lmem.c"/>
+    <File Name="lua/llex.h"/>
+    <File Name="lua/lgc.h"/>
+    <File Name="lua/lzio.h"/>
+    <File Name="lua/lgc.c"/>
+    <File Name="lua/ldebug.h"/>
+    <File Name="lua/lparser.c"/>
+    <File Name="lua/lobject.c"/>
+    <File Name="lua/loslib.c"/>
+    <File Name="lua/lzio.c"/>
+    <File Name="lua/lua.h"/>
+    <File Name="lua/lobject.h"/>
+    <File Name="lua/lundump.h"/>
+    <File Name="lua/llimits.h"/>
+    <File Name="lua/lapi.c"/>
+    <File Name="lua/lcode.c"/>
+    <File Name="lua/lopcodes.h"/>
+    <File Name="lua/lundump.c"/>
+    <File Name="lua/ldblib.c"/>
+    <File Name="lua/lstate.c"/>
+    <File Name="lua/ltablib.c"/>
+    <File Name="lua/lcode.h"/>
+    <File Name="lua/ldebug.c"/>
+    <File Name="lua/lstate.h"/>
+    <File Name="lua/lauxlib.h"/>
+    <File Name="lua/lvm.h"/>
+    <File Name="lua/lbaselib.c"/>
+    <File Name="lua/lmathlib.c"/>
+    <File Name="lua/lfunc.c"/>
+    <File Name="lua/ltable.c"/>
+    <File Name="lua/lopcodes.c"/>
+    <File Name="lua/linit.c"/>
+    <File Name="lua/ldump.c"/>
+    <File Name="lua/lstrlib.c"/>
+    <File Name="lua/llex.c"/>
+    <File Name="lua/lfunc.h"/>
+    <File Name="lua/ltable.h"/>
+  </VirtualDirectory>
+  <Settings Type="Dynamic Library">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" Required="yes">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="$(ProjectPath)SGZ2D.linux" CommandArguments="" WorkingDirectory="$(ProjectPath)" PauseExecWhenProcTerminates="yes"/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands></PostConnectCommands>
+        <StartupCommands></StartupCommands>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <CleanCommand>make -f Makefile.linux clean</CleanCommand>
+        <BuildCommand>make -f Makefile.linux</BuildCommand>
+        <PreprocessFileCommand></PreprocessFileCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild>
+
+</CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" Required="yes">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="SGZ2D.linux" CommandArguments="" WorkingDirectory="$(ProjectPath)" PauseExecWhenProcTerminates="yes"/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands></PostConnectCommands>
+        <StartupCommands></StartupCommands>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand></PreprocessFileCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild>
+
+</CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+    <GlobalSettings>
+      <Compiler Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+  </Settings>
+</CodeLite_Project>
